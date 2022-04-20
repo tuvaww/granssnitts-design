@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Avenir.woff") format("woff"),
+    url("../fonts/Avenir.ttf") format("truetype"),
+    url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+.header {
+  background-color: rgba(26, 26, 26, 55%);
+  height: 100px;
+  width: 100vw;
+  display: flex;
+}
+
+.symbolContainer {
+  height: 100%;
+  width: 20%;
+  position: relative;
+}
+.symbol {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.logoContainer {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+  width: 100%;
+}
+
+.menuContainer {
+  display: none;
+}
+
+.burgerContainer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.burger {
+  background-color: aqua;
+  width: 40px;
+  height: 5px;
+}
+
+.pinkBurger {
+  background-color: #eb2e59;
+}
+
+.yellowBurger {
+  background-color: #f0ac29;
+}
+
+.blackBurger {
+  background-color: #1a1a1a;
+}
+
+.headContainer {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headText {
+  width: 60%;
+  font-size: 22pt;
+  font-family: "avenir", Helvetica, sans-serif;
+}
+
+.pinkHead {
+  color: #eb2e59;
+}
+
+.border {
+  border-top: #f0ac29 2px solid;
+  width: 30%;
+  margin-top: 5px;
+}
+
+.onlyDesk {
+  display: none;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.product {
+  width: 400px;
+  height: 400px;
+}
+
+.productImg {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  background-color: rgba(26, 26, 26, 55%);
+  height: 100px;
+  width: 100vw;
+  margin-top: 40px;
+}
+
+.footer > p {
+  font-size: 13pt;
+}
