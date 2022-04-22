@@ -85,7 +85,7 @@
 }
 
 .headText {
-  width: 60%;
+  width: 300px;
   font-size: 22pt;
   font-family: "avenir", Helvetica, sans-serif;
 }
@@ -96,11 +96,12 @@
 
 .border {
   border-top: #f0ac29 2px solid;
-  width: 30%;
+  width: 150px;
   margin-top: 5px;
 }
 
-.onlyDesk {
+.onlyDesk,
+.onlyPad {
   display: none;
 }
 
@@ -128,8 +129,100 @@
   height: 100px;
   width: 100vw;
   margin-top: 40px;
+  display: flex;
 }
 
-.footer > p {
+.footerContainer > p {
   font-size: 13pt;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footerContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .symbolContainer {
+    height: 100%;
+    width: 20%;
+  }
+  .symbol {
+    height: 80%;
+    width: 70%;
+  }
+
+  .logoContainer {
+    width: 60%;
+    height: 100%;
+  }
+
+  .logo {
+    height: 50%;
+    width: 75%;
+  }
+
+  .productsContainer {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .onlyPad {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .onlyDesk {
+    display: inline;
+  }
+
+  .burgerContainer {
+    display: none;
+  }
+
+  .symbolContainer {
+    width: 10%;
+  }
+
+  .symbol {
+    width: 100%;
+  }
+
+  .logoContainer {
+    position: relative;
+    width: 40%;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    height: 40%;
+    width: 70%;
+  }
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    font-family: "avenir", Helvetica, sans-serif;
+    width: 50%;
+  }
+
+  .pinkMenu {
+    color: #eb2e59;
+  }
+  .yellowMenu {
+    color: #f0ac29;
+  }
+  .blackMenu {
+    color: #1a1a1a;
+  }
 }
